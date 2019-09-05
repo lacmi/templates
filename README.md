@@ -16,6 +16,9 @@ h2 header
 
 ###### \###### h6 header
 
+___
+\_\_\_ or \*\*\* or \-\-\-
+
 \**italic*\*
 
 \__italic_\_
@@ -48,3 +51,9 @@ h2 header
 > \> blockquote
 
 \`\<`<inline code>`\>\`
+
+\`\`\`language
+```javascript
+let variable = "be";
+```
+\`\`\`
