@@ -1,0 +1,45 @@
+%-- Preamble --------------------------------------------------------------------
+
+\documentclass[letterpaper]{article}
+
+% character encoding (pour les accents)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% langue française
+\usepackage[french]{babel}
+
+% set pages dimensions
+%\usepackage[letterpaper, left=1.91cm, right=1.91cm, top=2.54cm, bottom=2.54cm]{geometry}
+
+% include images
+%\usepackage{graphicx}
+%\graphicspath{ {./images/} }
+
+% adjust position of images with \includegraphics
+%\usepackage[export]{adjustbox}
+
+% onehalfspacing, doublespacing, etc.
+%\usepackage{setspace}
+
+% adjust position of page numbers
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyfoot[R]{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+%-- Document --------------------------------------------------------------------
+
+\begin{document}
+\pagenumbering{gobble} % disable page numbering
+\include{title-page}
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic} % page numbering starts here
+\include{section-name} % each \include is a separate .tex file --> section-name.tex
+\newpage
+\include{section-name}
+\end{document}
